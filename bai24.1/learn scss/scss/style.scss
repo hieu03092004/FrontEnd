@@ -1,0 +1,20 @@
+$color-red: #c30000;
+$color-green: #007200;
+$color-white: #fff;
+%button {
+  background: #c9c9c9;
+  color: #000;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.button--red {
+  @extend %button;
+  background: $color-red;
+  color: $color-white;
+}
+.button--green {
+  @extend %button;
+  background: $color-green;
+  color: $color-white;
+}

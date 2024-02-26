@@ -1,0 +1,18 @@
+.box{
+  background: #ddd;
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding: 30px;
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+.main .box:nth-child(2){
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.input--active{
+  background: yellow;
+}

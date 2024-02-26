@@ -1,0 +1,51 @@
+.section-one{
+    display: flex;
+}
+.content{
+    background: #CAEFF2;
+    padding: 20px;
+    height: 600px;
+    width: 70%;
+}
+.asside{
+    background:#F2DBCA ;
+    padding: 20px;
+    height: 600px;
+    width: 30%;   
+}
+.section-two{
+    margin-top: 10px;
+    display: flex;
+    /* de cho cac cai box nam tren cung 1 hang */   
+}
+.box{
+    background: #F2F1CA;
+    padding: 20px;
+    height: 150px;
+    width: 24%;
+    justify-content: space-between;
+    /* can theo chieu ngang va hai item sat le thi space-between */
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:768px){
+    .section-one{
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 100%;
+    }
+    .asside{
+        width: 100%;
+        /* chieu dai phan tram la don vi so voi box cha */
+    }
+    .section-two{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:480px){
+    .box{
+        width: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- JSON object -->
+    <!-- <script>
+        let infoUser = {
+            fullName: "Le Van A",
+            email: "test@gmail.com",
+            age: 18
+        };
+        // JSON
+        let infoUserJSON = `
+        {
+            "fullName":"Le Van A",
+            "email":"test@gmail.com",
+            "age":18
+        }
+        `;
+        console.log(infoUserJSON);
+        let infoUserJSONtoJS = JSON.parse(infoUserJSON);
+        //JSON.parse convert tu JSON sang JS 
+        console.log(infoUserJSONtoJS);
+        let infoUserJStoJSON = JSON.stringify(infoUser);
+        //JSON.stringify chuyen tu JS sang JSON
+        console.log(infoUserJStoJSON);
+        // console.log(infoUserJSONtoJS.fullName);
+        //gui du lieu dang JSON
+        //end JSON
+    </script> -->
+    <!-- end JSON object -->
+    <div class="listUser" id="listUser"></div>
+    <script>
+        //JSON kieu number
+        // let jsonNumber = `5`;
+        // console.log(jsonNumber);
+        // console.log(JSON.parse(jsonNumber));
+        // end JSON kieu number
+        // JSON co gia tri la array
+        let jsonArray =
+            `
+        [
+            {
+                "id":1,
+                "name":"Le Van A",
+                "email":"levana@gmail.com"
+            },
+             {
+                "id":2,
+                "name":"Le Van B",
+                "email":"levanb@gmail.com"
+            },
+             {
+                "id":3,
+                "name":"Le Van C",
+                "email":"levanc@gmail.com"
+            }
+
+        ]
+        `;
+        let listUser = JSON.parse(jsonArray);
+        let htmls = "";
+        listUser.forEach(item => {
+            htmls += `
+            <div class="user-item">
+                <div class="inner-name">${item.name}</div>
+                 <div class="inner-name">${item.email}</div>
+            </div>
+            `
+        });
+        const divListUser = document.querySelector("#listUser");
+        divListUser.innerHTML = htmls;
+        console.log(htmls);
+        //end JSON array 
+    </script>
+</body>
+
+</html>

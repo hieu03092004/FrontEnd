@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.71.0"
+  },
+  "name": "learnscss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --style expanded scss/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

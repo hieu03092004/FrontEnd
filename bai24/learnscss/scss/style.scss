@@ -1,0 +1,17 @@
+.button {
+  background: #c9c9c9;
+  color: #000;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.button--red {
+  @extend .button;
+  background: red;
+  color: #fff;
+}
+.button--green {
+  @extend .button;
+  background: green;
+  color: #fff;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <style>
+        .section-two .inner-main {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .section-two .inner-head {
+            background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .section-two .inner-head .inner-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        .section-two .inner-body {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .section-two .inner-head .inner-desc {
+            color: #fff;
+        }
+
+        .button {
+            background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+            border: 0;
+            padding: 10px 30px;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 45px;
+        }
+    </style>
+    <div class="section-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-main">
+                        <div class="inner-head">
+                            <h2 class="inner-title">Tiêu đề form</h2>
+                            <p class="inner-desc">Mô tả form</p>
+                        </div>
+                        <div class="inner-body">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Họ và tên*" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Số điện thoại*" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Nội dung"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 text-center">
+                                        <button class="button">Gửi ngay</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <style>
+        .modal-form .modal-header {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .modal-form .modal-header .close {
+            position: absolute;
+            top: 4px;
+            right: 8px;
+            background: black;
+            opacity: 1;
+            border-radius: 50%;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-form .modal-header .inner-image {
+            height: 40px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        .modal-form .modal-header .inner-title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .modal-form .modal-header .inner-desc {
+            margin-bottom: 0;
+        }
+
+        .modal-form .button {
+            width: 100%;
+        }
+
+        .modal-form .modal-content {
+            border-radius: 12px;
+        }
+    </style>
+    <div class="modal fade modal-form" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="inner-image" src="https://cdn.daca.vn/media/logo/logo.svg" alt="Logo" />
+                    <h5 class="inner-title">Liên hệ với chúng tôi</h5>
+                    <p class="inner-desc">Lorem</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Họ và tên" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Số điện thoại" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Lĩnh vực kinh doanh" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="button">Gửi đi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal -->
+    <style>
+        @media (min-width: 1200px) {
+            .col-xl-20 {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+
+        .col-xl-20 {
+            position: relative;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+        }
+    </style>
+
+    <!-- Tabs Products -->
+    <div class="section-three">
+        <div class="container">
+            <div class="inner-head">
+                <h2 class="inner-title">Thảm tấm đế cao su</h2>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">
+                            <h3>Sản phẩm mới</h3>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            <h3>Sản phẩm nổi bật</h3>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button"
+                            role="tab" aria-controls="contact" aria-selected="false">
+                            <h3>Khuyến mãi</h3>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="products">
+                            <div class="row">
+                                <div class="col-xl-20">
+                                    <div class="product-item">Ảnh tiêu đề Giá</div>
+                                </div>
+                                <div class="col-xl-20">
+                                    <div class="product-item">Ảnh tiêu đề Giá</div>
+                                </div>
+                                <div class="col-xl-20">
+                                    <div class="product-item">Ảnh tiêu đề Giá</div>
+                                </div>
+                                <div class="col-xl-20">
+                                    <div class="product-item">Ảnh tiêu đề Giá</div>
+                                </div>
+                                <div class="col-xl-20">
+                                    <div class="product-item">Ảnh tiêu đề Giá</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="" aria-labelledby="profile-tab">
+                        Sản phẩm nổi bật
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        Khuyến mãi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end Tabs Products -->
+
+    <script src="assets/bootstrap/jquery.slim.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

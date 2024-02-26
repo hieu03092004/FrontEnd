@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let infoUser = {
+        //     fullName: "Nguyen Van A",
+        //     email: "NguyenVanA@gmail.com"
+        // };
+        // infoUser["phone"] = "0123456";
+        // infoUser["Dia-chi"] = "123,Đường ABC";
+        // console.log(infoUser);
+        // console.log(infoUser["Dia-chi"]);
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let tong = 0;
+        // numbers.forEach(function (item, index, array) {
+        //     tong += item;
+        // })
+        // console.log(tong);
+        const monhoc = [{ ten: "Toán", diem: 8.6 }, { ten: "Lý", diem: 8.0 }]
+        const hocSinhGioi = monhoc.every(function (item) {
+            return item >= 8.0;
+        })
+        console.log(hocSinhGioi);
+        if (hocSinhGioi)
+            console.log("HocSinhGioi");
+        else
+            console.log("Khong phai hoc sinh gioi");
+    </script>
+</body>
+
+</html>

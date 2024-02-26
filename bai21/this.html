@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button">Button</button>
+    <ul id="menu">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+    <script>
+        // const button = document.querySelector("#button");
+        // button.addEventListener("click", function () {
+        //     console.log(this);
+        // });
+        // const listItem = document.querySelectorAll("#menu li");
+        // console.log(listItem);
+        // // this su kien truoc event
+        // listItem.forEach(element => {
+        //     element.addEventListener("click", function () {
+        //         console.log(this);
+        //     })
+        // });
+        let info = {
+            fullName: "Lê Văn A",
+            age: 18,
+            email: "namtest@gmail.com",
+            getFullName: function () {
+                console.log(this.fullName);
+            }
+        }
+        info.getFullName();
+        //arrow function khong co tu khoa this
+    </script>
+</body>
+
+</html>

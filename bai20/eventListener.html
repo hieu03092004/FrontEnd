@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button">Button</button>
+    <script>
+        function ham1() {
+            console.log('Viec1');
+        }
+        function ham2() {
+            console.log("Viec 2");
+        }
+        const button = document.querySelector("#button");
+        button.addEventListener("click", ham1);
+        button.addEventListener("click", ham2);
+        setTimeout(() => {
+            button.removeEventListener("click", ham2);
+        }, 5000)
+    </script>
+</body>
+
+</html>

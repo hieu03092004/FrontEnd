@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        height: 300px;
+        background: #7c4991;
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
+        border-radius: 5px;
+        display: flex;
+        /* flex-wrap: wrap-reverse; */
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        /* align-content: flex-end; */
+        align-items: flex-end;
+        justify-content: space-between;
+        /* align-self:chi ap dung cho 1 item nao do thoi */
+        /* justify-content thi can theo chieu ngang */
+        /* allign-content thi se can theo chieu doc */
+        /* canh nhieu dong thi dung allign-content */
+        /* align-item:center truc doc no se can giua */
+        /*align-items:cac item se duoc can theo chieu doc cua truc cross axit */
+        /* space-around khoang cach giua item va le bang 1/2 khoang cach giua cac item */
+        /* space-evenly khoang cach giua item va le se bang khoang cach giua cac item*/
+        /* justify-content:cac item se duoc can deu voi nhau va item dau vs item cuoi se nam sat le*/
+        /* justtify-content:center cac item se nam giua cac container */
+        /*flex-wrap: khi tong chieu rong cua cac element lon hon chieu rong cua container thi cac item se tu dong xuong dong */
+        /* flex-direction: row-reverse; */
+        /* flex-direction:cac item duoc xep theo chieu doc */
+        /* cac item se duoc sap xep tu trai sang phai */
+        /* chieu rong cua container=chieu rong cua cac item */
+      }
+
+      .item {
+        background-color: #f7941f;
+        border: 3px solid #fff;
+        padding: 10px;
+        margin: 0px 0px;
+        font-size: 28px;
+        color: #000;
+        border-radius: 5px;
+        text-align: center;
+        width: 150px;
+      }
+      .item:nth-child(2) {
+        align-self: flex-start;
+        /* can theo chieu doc */
+      }
+    </style>
+
+    <div class="container">
+      <div class="item">Item1</div>
+      <div class="item">Item2</div>
+      <div class="item">Item 3</div>
+      <!-- <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div> -->
+    </div>
+  </body>
+</html>

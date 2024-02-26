@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- onload -->
+  <!-- <script>
+      window.onload = function () {
+        const menu = document.querySelector("#menu");
+        console.log(menu);
+      };
+    </script>
+
+    <ul id="menu">
+      <li>Mục 1</li>
+      <li>Mục 2</li>
+      <li>Mục 3</li>
+    </ul> -->
+  <!-- end onload -->
+
+  <!-- onblour and onfocus -->
+
+  <!-- <style>
+      .focus {
+        background: yellow;
+      }
+    </style>
+
+    <input type="text" id="inputName" placeholder="Nhap ho ten" />
+    <script>
+      const inputName = document.querySelector("#inputName");
+      inputName.onblur = function () {
+        inputName.value = inputName.value.toUpperCase();
+        inputName.classList.remove("focus");
+      };
+      inputName.onfocus = function () {
+        inputName.classList.add("focus");
+      };
+    </script> -->
+
+  <!-- end onblour -->
+
+  <!-- onkeydown -->
+  <!-- <input type="text" id="inputName" placeholder="Nhap ho ten" />
+
+    <script>
+      const inputName = document.querySelector("#inputName");
+
+      inputName.onkeydown = function () {
+        console.log("onkeydown");
+        alert("onkeydown");
+      };
+    </script> -->
+
+  <!-- onkeyup -->
+
+  <!-- onclick -->
+  <!-- <style>
+      * {
+        box-sizing: border-box;
+      }
+      .body {
+        margin: 0;
+      }
+      .menu {
+        background: orange;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: none;
+      }
+      .menu.show {
+        display: block;
+      }
+      .button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+      }
+
+      .menu ul li {
+        padding: 10px;
+        border-bottom: 1px solid #0000002d;
+      }
+
+      .menu .inner-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+    <div id="menu" class="menu">
+      <button class="inner-close" id="buttonClose">Đóng</button>
+      <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+      </ul>
+    </div>
+    <button class="button" id="buttonMenu">Menu</button>
+
+    <script>
+      const buttonMenu = document.querySelector("#buttonMenu");
+      const buttonClose = document.querySelector("#buttonClose");
+      const menu = document.querySelector("#menu");
+      buttonMenu.onclick = function () {
+        menu.classList.add("show");
+      };
+      buttonClose.onclick = function () {
+        menu.classList.remove("show");
+      };
+    </script> -->
+  <!-- end onclick -->
+
+  <!-- onchange -->
+
+  <!-- <option value="red">Màu đỏ</option>
+      <option value="yellow">Màu vàng</option>
+      <option value="black">Màu đen</option>
+    </select>
+
+    <script>
+      const colors = document.querySelector("#colors");
+      colors.onchange = function () {
+        let currentColor = colors.value;
+        console.log(currentColor);
+      };
+    </script> -->
+  <!-- end_onchange -->
+  <!-- <input type="text" id="inputName" placeholder="Nhap ho ten" />
+    <script>
+      const inputName = document.querySelector("#inputName");
+      inputName.onchange = function () {
+        console.log(inputName.value);
+      };
+    </script> -->
+  <!-- <script>
+    window.onload = function () {
+      const menu = document.querySelector("#menu");
+      console.log(menu);
+    }
+  </script>
+  <ul id="menu">
+    <li>Mục 1</li>
+    <li>Mục 2</li>
+    <li>Mục 3</li>
+  </ul> -->
+  <style>
+    .focus {
+      background: yellow;
+    }
+  </style>
+  <input type="text" id="inputName" placeholder="Họ và Tên" />
+  <script>
+    const inputName = document.querySelector("#inputName");
+    inputName.onblur = function () {
+      inputName.value = inputName.value.toUpperCase()
+      console.log(inputName.value);
+      inputName.classList.remove("focus");
+    }
+    inputName.onfocus = function () {
+      inputName.classList.add("focus");
+    }
+  </script>
+</body>
+
+</html>
