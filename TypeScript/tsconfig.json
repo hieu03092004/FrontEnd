@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "js" ,//bien dich vao thu muc js
+        "target": "ES6",//cho phep code bien dich typescript sang kieu ES6
+        "module": "commonjs",
+        "removeComments": true,//xoa comment khi bien dich sang file js
+
+    }
+}

@@ -13,6 +13,173 @@
 </head>
 
 <body>
+    <!-- Registration Form Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h2 class="mb-0">Register Form</h2>
+                        <p class="mb-0">Please fill out the registration form</p>
+                    </div>
+                    <div class="card-body">
+                        <!-- Progress Bar -->
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                Step 1 of 2
+                            </div>
+                        </div>
+
+                        <form id="registrationForm" method="post" action="/register-form">
+                            <!-- Step 1 -->
+                            <div id="step1" class="form-step">
+                                <div class="form-group mb-3">
+                                    <label class="form-label">Would you like to sign up for Stratus Account? <span class="text-danger">*</span></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="stratus_account" id="stratus_yes" value="Yes" required>
+                                        <label class="form-check-label" for="stratus_yes">Yes</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="stratus_account" id="stratus_no" value="No" required>
+                                        <label class="form-check-label" for="stratus_no">No</label>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div id="step2" class="form-step" style="display: none;">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="first_name" class="form-label">First Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="first_name" name="first_name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="last_name" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="last_name" name="last_name" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="form-label">What types of forms have you created? <span class="text-danger">*</span></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="form_types[]" id="payment_form" value="Payment Form">
+                                        <label class="form-check-label" for="payment_form">Payment Form</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="form_types[]" id="survey_form" value="Survey Form">
+                                        <label class="form-check-label" for="survey_form">Survey Form</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="form_types[]" id="donation_form" value="Donation Form">
+                                        <label class="form-check-label" for="donation_form">Donation Form</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="form_types[]" id="contact_form" value="Contact Form">
+                                        <label class="form-check-label" for="contact_form">Contact Form</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="form_types[]" id="quote_form" value="Request a Quote Form">
+                                        <label class="form-check-label" for="quote_form">Request a Quote Form</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="form_types[]" id="event_form" value="Event Registration Form">
+                                        <label class="form-check-label" for="event_form">Event Registration Form</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="form-label">What payment method(s) do you use? <span class="text-danger">*</span></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="payment_methods[]" id="paypal" value="Paypal">
+                                        <label class="form-check-label" for="paypal">Paypal</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="payment_methods[]" id="stripe" value="Stripe">
+                                        <label class="form-check-label" for="stripe">Stripe</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="payment_methods[]" id="mollie" value="Mollie">
+                                        <label class="form-check-label" for="mollie">Mollie</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="payment_methods[]" id="other_payment" value="Other">
+                                        <label class="form-check-label" for="other_payment">Other</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="specify_other" class="form-label">Please Specify (if Other)</label>
+                                    <input type="text" class="form-control" id="specify_other" name="specify_other">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy_policy" name="privacy_policy" value="1" required>
+                                        <label class="form-check-label" for="privacy_policy">
+                                            I agree to the privacy policy. <span class="text-danger">*</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-secondary me-2" onclick="previousStep()">Previous</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function nextStep() {
+            const step1 = document.getElementById('step1');
+            const step2 = document.getElementById('step2');
+            const progressBar = document.querySelector('.progress-bar');
+            
+            // Validate step 1
+            const stratusAccount = document.querySelector('input[name="stratus_account"]:checked');
+            if (!stratusAccount) {
+                alert('Please select an option for Stratus Account');
+                return;
+            }
+            
+            step1.style.display = 'none';
+            step2.style.display = 'block';
+            progressBar.style.width = '100%';
+            progressBar.textContent = 'Step 2 of 2';
+        }
+        
+        function previousStep() {
+            const step1 = document.getElementById('step1');
+            const step2 = document.getElementById('step2');
+            const progressBar = document.querySelector('.progress-bar');
+            
+            step2.style.display = 'none';
+            step1.style.display = 'block';
+            progressBar.style.width = '50%';
+            progressBar.textContent = 'Step 1 of 2';
+        }
+    </script>
     <style>
         .section-two .inner-main {
             border-radius: 10px;

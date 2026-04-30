@@ -1,13 +1,13 @@
 import Header from "../Header";
 import { createContext } from "react";
+export const MenuContext=createContext();
 // import Menu from "../Menu";
-export const MenuContext = createContext();
 function Layout() {
-  const menu = ["Trang chủ", "Tin tức", "Giới thiệu", "Liên hệ"];
+  const menu=["Trang chủ","Tin tức","Giới thiệu","Liên hệ"]
   return (
     <>
       <MenuContext.Provider value={menu}>
-        <Header />
+        <Header/>
       </MenuContext.Provider>
       <div>Main</div>
       <div>Footer</div>

@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
 import "./App.css";
-// import Counter from "./components/Counter";
+import Counter from "./components/Counter";
 // import CounterState from "./components/CounterState";
 // import CounterReducer from "./components/CounterUsereducer";
 // import ProductState from "./components/ProductState";

@@ -1,0 +1,729 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Nguyen Thi A",
+      "email": "nguyenthia@gmail.com",
+      "password": "nguyenthia",
+      "token": "bkp9VQydMBRmW67obqD7"
+    },
+    {
+      "id": 2,
+      "fullName": "Do Thi B",
+      "email": "dothib@gmail.com",
+      "password": "dothib",
+      "token": "KszitkpwbbPF3fdjbQWh"
+    },
+    {
+      "id": 3,
+      "fullName": "Ngo Van C",
+      "email": "ngovanc@gmail.com",
+      "password": "ngovanc",
+      "token": "abVy7NJdWMNgqGcCD9Lo"
+    },
+    {
+      "id": 4,
+      "fullName": "Le Van D",
+      "email": "levand@gmail.com",
+      "password": "levand",
+      "token": "tq7nF9XpG3wUnr1U76P5"
+    },
+    {
+      "fullName": "Nguyễn thị e",
+      "email": "nguyenthie@gmail.com",
+      "password": "nguyenthie",
+      "token": "NU2p0Y2SHfNXYdeoPuTO",
+      "id": 5
+    },
+    {
+      "fullName": "truongthanhieu",
+      "email": "truongthanhhieu987@gmail.com",
+      "password": "03092004",
+      "token": "MuqBuXE5zRBdKAMMGqP3",
+      "id": 6
+    },
+    {
+      "fullName": "nguyenthif",
+      "email": "nguyenthif@gmail.com",
+      "password": "12345678",
+      "token": "CwJY0ACf0eR7QPktRCv0",
+      "id": 7
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "HTML5"
+    },
+    {
+      "id": 2,
+      "name": "CSS3"
+    },
+    {
+      "id": 3,
+      "name": "Javascript"
+    },
+    {
+      "id": 4,
+      "name": "ReactJS"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topicId": 1,
+      "question": "HTML là viết tắt của...?",
+      "answers": [
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyper Text Markup Language"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 2,
+      "topicId": 1,
+      "question": "Ai là người đưa ra các tiêu chuẩn Web?",
+      "answers": [
+        "Tổ chức World Wide Web Consortium (W3C)",
+        "Apple",
+        "Google",
+        "Microsoft"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để nhúng video trong HTML5?",
+      "answers": [
+        "<video>",
+        "<media>",
+        "<movie>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "topicId": 1,
+      "question": "Thuộc tính nào của phần tử media cho phép phát tự động?",
+      "answers": [
+        "controls",
+        "autoplay",
+        "loop",
+        "muted"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "topicId": 1,
+      "question": "API nào của HTML5 hỗ trợ lưu trữ key‑value đồng bộ phía client?",
+      "answers": [
+        "Web SQL Database",
+        "IndexedDB",
+        "localStorage",
+        "Service Worker"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "topicId": 1,
+      "question": "Phần tử nào định nghĩa nội dung tự chứa, độc lập (ví dụ một bài viết)?",
+      "answers": [
+        "<section>",
+        "<article>",
+        "<aside>",
+        "<div>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "topicId": 1,
+      "question": "Thuộc tính nào của thẻ <input> dùng để hiển thị bộ chọn ngày?",
+      "answers": [
+        "type=\"date\"",
+        "type=\"datetime\"",
+        "type=\"calendar\"",
+        "type=\"time\""
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "topicId": 2,
+      "question": "Thuộc tính nào tạo một flex container trong CSS3?",
+      "answers": [
+        "position: flex;",
+        "display: flex;",
+        "flex: container;"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "topicId": 2,
+      "question": "Đơn vị nào tỷ lệ theo font-size của phần tử gốc (root)?",
+      "answers": [
+        "em",
+        "px",
+        "rem",
+        "vh"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "topicId": 2,
+      "question": "Thuộc tính nào tạo bóng cho văn bản?",
+      "answers": [
+        "box-shadow",
+        "filter: drop-shadow()",
+        "text-shadow"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "topicId": 2,
+      "question": "Khoảng cách giữa viền (border) và nội dung (content) là thuộc tính nào?",
+      "answers": [
+        "margin",
+        "padding",
+        "gap"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "topicId": 2,
+      "question": "Hàm màu nào thuộc CSS Color Level 4 dùng hệ LCH?",
+      "answers": [
+        "rgb()",
+        "hsl()",
+        "lch()",
+        "lab()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 13,
+      "topicId": 3,
+      "question": "Phương thức nào thêm phần tử vào cuối mảng?",
+      "answers": [
+        "push()",
+        "pop()",
+        "unshift()",
+        "concat()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 14,
+      "topicId": 3,
+      "question": "Giá trị trả về của typeof null là gì?",
+      "answers": [
+        "\"null\"",
+        "\"object\"",
+        "\"undefined\""
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "topicId": 3,
+      "question": "Câu lệnh nào tạo biến có phạm vi block?",
+      "answers": [
+        "var",
+        "let",
+        "function",
+        "const"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "topicId": 3,
+      "question": "Hàm mảng nào trả về mảng mới gồm các phần tử thỏa điều kiện?",
+      "answers": [
+        "map()",
+        "filter()",
+        "reduce()",
+        "forEach()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "topicId": 3,
+      "question": "Toán tử nào trải (expand) một iterable thành danh sách đối số?",
+      "answers": [
+        "*",
+        "...",
+        "??",
+        "=>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "topicId": 4,
+      "question": "Hook nào dùng để quản lý state trong function component?",
+      "answers": [
+        "useEffect",
+        "useState",
+        "useMemo",
+        "useRef"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "topicId": 4,
+      "question": "Prop nào bắt buộc khi render danh sách phần tử trong React?",
+      "answers": [
+        "className",
+        "style",
+        "key",
+        "id"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 20,
+      "topicId": 4,
+      "question": "Hook nào dùng để chạy side effects sau khi render?",
+      "answers": [
+        "useEffect",
+        "useCallback",
+        "useLayoutEffect",
+        "useReducer"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "topicId": 4,
+      "question": "JSX được biên dịch thành gì?",
+      "answers": [
+        "Chuỗi HTML",
+        "Lệnh SQL",
+        "Lời gọi hàm JavaScript (React.createElement)",
+        "DOM thuần"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 22,
+      "topicId": 4,
+      "question": "Thư viện nào thường dùng để định tuyến (routing) trên React?",
+      "answers": [
+        "redux",
+        "react-router-dom",
+        "axios",
+        "mobx"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "answer": [
+    {
+      "userId": 5,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 1
+        },
+        {
+          "questionId": 2,
+          "answer": 2
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 3
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": 5,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 5,
+          "answer": 2
+        },
+        {
+          "questionId": 6,
+          "answer": 1
+        },
+        {
+          "questionId": 7,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 8,
+          "answer": 1
+        },
+        {
+          "questionId": 9,
+          "answer": 2
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 12,
+          "answer": 2
+        },
+        {
+          "questionId": 8,
+          "answer": 1
+        },
+        {
+          "questionId": 9,
+          "answer": 0
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userId": 6,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 1
+        },
+        {
+          "questionId": 16,
+          "answer": 1
+        }
+      ],
+      "id": 5
+    },
+    {
+      "userId": 7,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 17,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 16,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 2
+        }
+      ],
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "topicId": 4,
+      "answers": [
+        {
+          "questionId": 18,
+          "answer": 1
+        },
+        {
+          "questionId": 19,
+          "answer": 2
+        },
+        {
+          "questionId": 20,
+          "answer": 0
+        },
+        {
+          "questionId": 21,
+          "answer": 2
+        }
+      ],
+      "id": 7
+    },
+    {
+      "userId": 8,
+      "topicId": 4,
+      "answers": [
+        {
+          "questionId": 22,
+          "answer": 1
+        },
+        {
+          "questionId": 18,
+          "answer": 1
+        },
+        {
+          "questionId": 20,
+          "answer": 0
+        },
+        {
+          "questionId": 19,
+          "answer": 2
+        }
+      ],
+      "id": 8
+    },
+    {
+      "userId": 9,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 1
+        },
+        {
+          "questionId": 7,
+          "answer": 0
+        }
+      ],
+      "id": 9
+    },
+    {
+      "userId": 10,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 8,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        },
+        {
+          "questionId": 12,
+          "answer": 2
+        }
+      ],
+      "id": 10
+    },
+    {
+      "userId": 11,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 17,
+          "answer": 1
+        },
+        {
+          "questionId": 16,
+          "answer": 1
+        }
+      ],
+      "id": 11
+    },
+    {
+      "userId": 12,
+      "topicId": 4,
+      "answers": [
+        {
+          "questionId": 18,
+          "answer": 1
+        },
+        {
+          "questionId": 20,
+          "answer": 0
+        },
+        {
+          "questionId": 21,
+          "answer": 2
+        },
+        {
+          "questionId": 22,
+          "answer": 1
+        }
+      ],
+      "id": 12
+    },
+    {
+      "userId": 13,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 2
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 2
+        },
+        {
+          "questionId": 7,
+          "answer": 0
+        }
+      ],
+      "id": 13
+    },
+    {
+      "userId": 5,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 2
+        },
+        {
+          "questionId": 6,
+          "answer": 0
+        },
+        {
+          "questionId": 7,
+          "answer": 0
+        }
+      ],
+      "id": 14
+    },
+    {
+      "userId": 5,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 1
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 1
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 5,
+          "answer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 1
+        },
+        {
+          "questionId": 7,
+          "answer": 1
+        }
+      ],
+      "id": 15
+    },
+    {
+      "userId": 5,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 1
+        },
+        {
+          "questionId": 16,
+          "answer": 0
+        },
+        {
+          "questionId": 17,
+          "answer": 1
+        }
+      ],
+      "id": 16
+    }
+  ]
+}

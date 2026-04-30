@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
 function UseEffect1() {
-  useEffect(() => {
-    let listItem = document.querySelectorAll("ul li");
+  useEffect(()=>{
+    let listItem =document.querySelectorAll("ul li");
     console.log(listItem);
-  });
+  })
 
   return (
     <>

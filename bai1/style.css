@@ -1,0 +1,7 @@
+/* khi ở màn hình dưới 809px thì  */
+footer{
+    padding: 75px 30px 25px;
+}
+.footer .content{
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+}

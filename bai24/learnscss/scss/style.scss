@@ -1,3 +1,20 @@
+$color-red:red;
+$color-green:green;
+$color-white:#fff;
+$color-gray:#424242;
+@mixin display-flex(){
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin flex-wrap(){
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+@mixin border-radius($radius){
+  border-radius:$radius;
+}
 .button {
   background: #c9c9c9;
   color: #000;
@@ -7,11 +24,107 @@
 }
 .button--red {
   @extend .button;
-  background: red;
+  background: $color-red;;
   color: #fff;
 }
 .button--green {
   @extend .button;
-  background: green;
+  background: $color-green;
   color: #fff;
+}
+//nesting
+.nav{
+  list-style:none;
+  @include display-flex();
+  @include flex-wrap();
+  padding:0px;
+  margin:0px;
+  &__item{
+    margin:0 15px;
+  }
+  &__link{
+    text-decoration: none;
+    color:$color-gray;
+    &--active{
+      color:$color-green;
+    }
+    &--disabled{
+      color:#ddd;
+      cursor:no-drop;
+    }
+    &:hover{
+      color:$color-red;
+    }
+  }
+
+}
+.pagination{
+  @include display-flex();
+  @include flex-wrap();
+  list-style:none;
+  padding:0px;
+  margin:0px;
+  flex-wrap:wrap;
+  &__item{
+    margin:0 5px;
+  }
+  &__link{
+    text-decoration: none;
+    color:$color-gray;
+  }
+  &__item--active &__link{
+    color:$color-red;
+
+  }
+  &__item--disabled &__link{
+    cursor: no-drop;
+    color:#ddd;
+  }
+}
+@mixin position-absolute($position,$x,$y){
+  @if($position =="top-left"){
+   
+    top:$x;
+    left:$y;
+  }
+  @else if($position =="top-right"){
+    top:$x;
+    right:$y;
+  }
+  @else if($position =="bottom-left"){
+    bottom:$x;
+    left:$y;
+  }
+  @else if($position =="bottom-right"){
+    bottom:$x;
+    right:$y
+  }
+  @else{
+
+  } 
+}
+.box{
+  position:relative;
+  width: 100%;
+  height: 500px;
+  background:yellow;
+  @include border-radius(10px);
+  &__item{
+    background:orange;
+    width: 100px;
+    height: 50px;
+    position:absolute;
+    &--one{
+      @include position-absolute("top-left",10px,10px);
+    }
+    &--two{
+      @include position-absolute("top-right",20px,20px);
+    }
+    &--three{
+      @include position-absolute("bottom-left",30px,30px);
+    }
+    &--four{
+      @include position-absolute("bottom-right",40px,40px);
+    }
+  }
 }

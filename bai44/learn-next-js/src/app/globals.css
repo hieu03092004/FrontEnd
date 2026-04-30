@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-quicksand { font-family: var(--font-quicksand), sans-serif; }
+  .font-dancing { font-family: var(--font-dancing), cursive; }
+}

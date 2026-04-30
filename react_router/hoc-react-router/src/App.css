@@ -1,0 +1,20 @@
+.header .inner-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.header .inner-menu li a{
+    text-decoration:none;
+    color: black;
+}
+.header .inner-menu li a:hover,.header .inner-menu li a.active{
+    color: orange;
+}
+.pagination button.active{
+    background-color: orange;
+    color: white;
+}
+.footer{
+    text-align: center;
+}

@@ -1,3 +1,3 @@
-export function pow() {
-  return Math.pow(10, 3);
+export const pow=()=>{
+  return Math.pow(10,3);
 }
